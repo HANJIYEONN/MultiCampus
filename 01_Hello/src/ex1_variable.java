@@ -52,8 +52,29 @@ public class ex1_variable {
 		System.out.println(b);
 		
 		b = 1 > 2; //비교연산을 하고 결과로 boolean형을 데이터가 나옴
+		System.out.println(b);
 		
-
+		//문자형 
+		char c;
+		c = 'A'; //문자 하나를 저장, 홑따옴표로 묶어줌
+		System.out.println(c);
+		c = 65;
+		System.out.println(c);
+		c = '\u0041';
+		System.out.println(c);
+		
+		c = '가';
+		System.out.println(c);
+		c = '\uac00';
+		System.out.println(c);
+		
+		//문자열
+		//쌍따옴표로 묶어줌
+		String str ="Hello";
+		System.out.println(str);
+		System.out.println(str+str);
+		String s1 ="1";
+		System.out.println(s1+s1);
 	}
 
 }
