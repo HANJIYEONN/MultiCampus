@@ -19,20 +19,20 @@ public class p3_switch_DayInMouth {
 		Scanner sc = new Scanner(System.in);
 		
 		int month = sc.nextInt();
-		int day;
+		String day = null;
 		
 		String basic1 = "2019년";
-		String basic2 = "2019년";
+		String basic2 = "";
 		
 		if (month == 1|| month == 3 || month == 5 ||month == 7 || month == 9 || month ==11 ) {
-			
-		}
+			day = "odd";
+		} day = "even";
 		
-		switch (month) {
-		case  1, 3, 5, 7, 9, 11:
+		switch (day) {
+		case "odd":
 			System.out.println("a");
 		break;								
-		case 2,4,6,8,10,12:
+		case "even":
 		System.out.println("b");
 		default:
 		System.out.println("월을 잘못 입력하셨습니다.");
