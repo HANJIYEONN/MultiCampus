@@ -23,6 +23,19 @@ public class ex1_variable {
 		//소수점이 있는 데이터를 저장 
 		//float : 32bit
 		//double : 64bit
+		
+		//자바는 실수의 기본타입을 double로 간주함
+/*		
+		float rad, area;
+		float PI = 3.141592F;
+		
+		rad = 5;
+		area = rad* rad * PI;
+		System.out.println(area);
+*/		
+		//double
+		double PI = 3.141592;
+		double r1 = 1.23;
 
 	}
 
