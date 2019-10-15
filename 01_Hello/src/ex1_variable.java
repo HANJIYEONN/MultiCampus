@@ -35,7 +35,24 @@ public class ex1_variable {
 */		
 		//double
 		double PI = 3.141592;
-		double r1 = 1.23;
+		double r1 = 1.23e2;		//e2 : 10^2
+		double r2 = 1.23e-2;	//e-2 : 10^-2
+		System.out.println(r1);
+		System.out.println(r2);
+		
+		// 논리형
+		// bollean 참인지 거짓인지를 판단,	 결과값 : true / false
+		boolean condition = true;
+		condition = false;
+		System.out.println(condition);
+		
+		boolean b;
+		//값을 직접 대입
+		b = false;
+		System.out.println(b);
+		
+		b = 1 > 2; //비교연산을 하고 결과로 boolean형을 데이터가 나옴
+		
 
 	}
 
