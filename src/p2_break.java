@@ -13,17 +13,18 @@ public class p2_break {
 	public static void main(String[] args) {
 		Scanner  sc =  new Scanner(System.in);
 		int total = 0;
-		int avg = 0;
-		int score = sc.nextInt();
+		int count= 0;
 		
-		while (score < 0 ) {
-			
-			for (int ii = 0; ii < score; ii++)
-				total = score;
+		while (true) {
 			//특정한 조건이 되면 반복문을 빠져나가도록 설계
+			System.out.println("점수입력 : ");
+			int grade = sc.nextInt();
+			if (grade < 0) break;
+			total += grade;
+			count++;
 			break;
 		}
-		
+		System.out.println("평균은 " + total /count);
 	}
 
 }
