@@ -19,10 +19,12 @@ public class p2_break {
 			//특정한 조건이 되면 반복문을 빠져나가도록 설계
 			System.out.println("점수입력 : ");
 			int grade = sc.nextInt();
-			if (grade < 0) break;
+			if (grade < 0) {
+				break;
+			}
 			total += grade;
 			count++;
-			break;
+			
 		}
 		System.out.println("평균은 " + total /count);
 	}

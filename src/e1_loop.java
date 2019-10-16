@@ -189,6 +189,7 @@ public class e1_loop {
 		
 		//문제 
 		//트리만들기
+		/*
 		for(int ii = 1; ii < 6; ii++) {
 			for(int jj = 0; jj <ii; jj++) {
 				System.out.printf("*");
@@ -196,7 +197,7 @@ public class e1_loop {
 			
 			System.out.println("\n");
 		}
-		
+		*/
 
 	}
 
