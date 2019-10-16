@@ -9,10 +9,17 @@ public class p3_continue {
 
 	public static void main(String[] args) {
 		String s = "no news is good news";
-		//문자열의 길이
-		System.out.println(s.length());
-		//0번째 칸의 문자 가져오기
-		System.out.println(s.charAt(0));
+		int n = 0;
+//		//문자열의 길이
+//		System.out.println(s.length());
+//		//0번째 칸의 문자 가져오기
+//		System.out.println(s.charAt(0));
+		for (int i=0; i < s.length(); i++) {
+			if (s.charAt(i) !='n') continue; //continue뒤의 내용은 실행하지않고
+			//조건문 검사로 다시 넘어감
+			n++;
+		}
+		System.out.println(n);
 	}
 
 }
