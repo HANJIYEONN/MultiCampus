@@ -88,31 +88,30 @@ public class e1_loop {
 		 */
 		
 		
-//		System.out.println("정답을 추측해 보세요");
-//		Scanner sc2 = new Scanner(System.in);
-//		
-//		int time = 0;
-//		int numm = sc2.nextInt();
-//		int answer = 59;
-//		
-//		
-//		do {
-//
-//			if (numm > answer) {
-//				System.out.println("입력하신 수 보다 낮습니다");
-//				time++;
-//				break;
-//			} else {
-//				System.out.println("입력하신 수 보다 높습니다");
-//				time++;
-//				break;
-//			}
-//		} while (numm != answer) ;
-//		
-//		System.out.println("축하합니다. 시도횟수 : "+ time);
-//		
-
+		/*
 		
+		int time = 0;
+		int answer = 59;
+		
+	
+		do {
+			System.out.println("정답을 추측해 보세요");
+			Scanner sc2 = new Scanner(System.in);
+			int numm = sc2.nextInt();
+			if (numm > answer) {
+				time++;
+				System.out.println("입력하신 수 보다 낮습니다");
+			} else if(numm < answer) {
+				time++;
+				System.out.println("입력하신 수 보다 높습니다");
+			} else {
+				time++;
+				System.out.println("축하합니다. 시도횟수 : "+ time);break;
+			}
+				
+		} while(true);
+		*/
+
 		/*
 		 for문
 		 

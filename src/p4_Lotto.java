@@ -13,7 +13,7 @@ public class p4_Lotto {
 		int lotto[] = new int[6];
 		
 		for (int i = 0; i < lotto.length; i++ ) {
-			lotto[i] = (int) (Math.random() * 45);
+			lotto[i] = (int) ((Math.random() * 45)+1);
 			for (int j = 0; j < i; j++) {
 				if(lotto[i] == lotto[j]) {
 					i--;
@@ -21,9 +21,14 @@ public class p4_Lotto {
 			}
 
 		}
-		for (int i = 0; i < 6; i++ ) {
-			System.out.println(lotto[i]);
+		for (int i : lotto) {
+			System.out.println(i);
 		}
+		
+		///forEach
+//		for(int n : num) {
+//			실행문장;
+//		}
 		
 	}
 

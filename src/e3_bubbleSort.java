@@ -14,19 +14,17 @@ public class e3_bubbleSort {
 		int array[] = {3 ,2, 5, 4, 1};
 		int temp = 0;
 		
-		for (int i = 0; i < array.length; i++) {
-			for (int j = 0; j <i; j++) {
-				
-				if (array[i] < array[j]) {
+		for (int i = 0; i < array.length-1; i++) {		
+				if (array[i] > array[i+1]) {
 					temp = array[i];
-					array[i] = array[j];
-					array[j] = temp;
+					array[i] = array[i+1];
+					array[i+1] = temp;
 				}
-			
-			}	
-		}
+			}
+		
 		for (int i = 0; i < array.length; i++) {
 			System.out.print(array[i]);
 		}
+		
 	}
 }
