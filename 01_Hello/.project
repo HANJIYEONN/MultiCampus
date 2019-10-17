@@ -1,10 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
-<<<<<<< HEAD
-	<name>D03</name>
-=======
-	<name>D02</name>
->>>>>>> refs/remotes/origin/master
+	<name>01_Hello</name>
 	<comment></comment>
 	<projects>
 	</projects>
