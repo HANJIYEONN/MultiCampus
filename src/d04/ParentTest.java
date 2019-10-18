@@ -1,5 +1,5 @@
 package d04;
-
+// 상속은 하나의 부모클래스만 가능(단일 상속)
 class Parent{
 	int data = 100;
 	

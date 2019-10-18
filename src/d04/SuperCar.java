@@ -29,6 +29,5 @@ public class SuperCar extends Car {
 	public void setTurbo(boolean turbo) {
 		this.turbo = turbo;
 	}
-	
 
 }
