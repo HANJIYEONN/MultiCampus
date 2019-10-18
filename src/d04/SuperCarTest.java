@@ -10,6 +10,7 @@ public class SuperCarTest {
 		scar.setTurbo(true);
 		
 		System.out.println(scar);
+		System.out.println(scar);
 		
 		
 	}
