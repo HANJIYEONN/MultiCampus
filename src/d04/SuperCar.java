@@ -23,6 +23,12 @@
 package d04;
 
 public class SuperCar extends Car {
+	//자식클래스에서 추가되는 내용 선언가능
+	boolean turbo;
 
+	public void setTurbo(boolean turbo) {
+		this.turbo = turbo;
+	}
+	
 
 }
