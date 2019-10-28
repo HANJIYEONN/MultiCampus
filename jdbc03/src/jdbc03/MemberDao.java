@@ -122,7 +122,7 @@ public class MemberDao {
 			pstmt.setString(2, m.getMpw());
 			pstmt.setString(3, m.getMname());
 			pstmt.setString(4, m.getMemail());
-			
+			pstmt.executeQuery();
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
