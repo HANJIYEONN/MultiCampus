@@ -1,4 +1,3 @@
-package Employee;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -9,12 +8,14 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class EmployeeDao {
+	private Connection conn;
 	private static EmployeeDao instance;
-	private Connection conn = null;
+
 	
-	String URL ="jdbc:oracle:thin:@localhost:1521:xe";
-	String USER = "multi";
-	String PASSWORD = "multi1234";
+	static final String URL = "jdbc:oracle:thin:@localhost:1521:xe";
+	static final String USER = "multi";
+	static final String PASSWORD = "multi1234";
+	
 	
 	public static EmployeeDao getInstance () {
 		if (instance == null) {
@@ -22,9 +23,9 @@ public class EmployeeDao {
 		}
 		return instance;
 	}
-	public EmployeeDao() {
+	private EmployeeDao() {
 		try {
-			DriverManager.getConnection(URL, USER, PASSWORD);
+			conn = DriverManager.getConnection(URL, USER, PASSWORD);
 			System.out.println("연결에 성공하였습니다.!");
 		} catch (SQLException e) {
 			e.printStackTrace();
@@ -33,7 +34,7 @@ public class EmployeeDao {
 	public void InsertEmployee(Employee e) {
 		PreparedStatement pstmt = null;
 		
-		String sql = "INSERT INTO emp3 VALUES (?,?,?,?,?,?,?,?)";
+		String sql = "INSERT INTO EMP3 VALUES (?,?,?,?,?,?,?,?)";
 		
 		try {
 			pstmt = conn.prepareStatement(sql);
@@ -45,7 +46,6 @@ public class EmployeeDao {
 			pstmt.setInt(6, e.getSal());
 			pstmt.setInt(7, e.getComm());
 			pstmt.setInt(8, e.getDeptno());
-			
 			pstmt.executeUpdate();
 			System.out.println("INSERT 완료되었습니다");
 			
